@@ -2,7 +2,7 @@
   "name": "harscrub",
   "version": "0.1.0",
   "description": "Redact auth headers, cookies, tokens and bodies from HAR files before sharing — rule-configurable, format-preserving, fully offline.",
-  "author": "JaydenCJ",
+  "author": "JaydenCJ <aisingioro.kiyon@gmail.com>",
   "license": "MIT",
   "type": "module",
   "bin": {
