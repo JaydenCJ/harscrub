@@ -1,0 +1,54 @@
+{
+  "name": "harscrub",
+  "version": "0.1.0",
+  "description": "Redact auth headers, cookies, tokens and bodies from HAR files before sharing — rule-configurable, format-preserving, fully offline.",
+  "author": "JaydenCJ",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "harscrub": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"tests/*.test.mjs\"",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "keywords": [
+    "har",
+    "redact",
+    "sanitize",
+    "secrets",
+    "cookies",
+    "devtools",
+    "privacy",
+    "cli"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydenCJ/harscrub.git"
+  },
+  "homepage": "https://github.com/JaydenCJ/harscrub#readme",
+  "bugs": {
+    "url": "https://github.com/JaydenCJ/harscrub/issues"
+  }
+}

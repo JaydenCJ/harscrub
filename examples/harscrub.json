@@ -1,0 +1,26 @@
+{
+  "mode": "hash",
+  "salt": "team42",
+  "headers": {
+    "add": ["x-internal-*"],
+    "keep": []
+  },
+  "cookies": {
+    "keep": ["theme", "locale"]
+  },
+  "queryParams": {
+    "add": ["ticket"],
+    "keep": []
+  },
+  "bodyKeys": {
+    "add": ["mfa_code"],
+    "keep": []
+  },
+  "patterns": {
+    "disable": [],
+    "custom": [
+      { "name": "acme-key", "regex": "acme_[a-z0-9]{32}" }
+    ]
+  },
+  "dropContent": false
+}
